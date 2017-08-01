@@ -1,0 +1,416 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NMTG__ConfigArchive__DevicePack__API__all__TestSuite" verbose="10" preserve-order="true" parallel="tests" thread-count="30">
+
+    <test name="CA_ASAv_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ASAv_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ASR1002_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="XE" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_Cat3750E_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="Cat3750_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_CAT4K_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>-->
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="CAT4K_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_CAT6K_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>-->
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="CAT6K_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_CSR1000V_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="CSR1000V_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_C3560_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive  , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="Cat3560_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR1941W_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISR1941_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR2901_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+					 
+                <include name="ISR2901_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR2951_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive , ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISR2951_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR3845_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISR3845_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR3900_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISR_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISR3925_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISR3925_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ISRv_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ISRv_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>   
+    <test name="CA_Katana_Tests">		
+        <parameter name="testBeanIds" value="ScheduleArchive , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="Katana_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_NAM_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleRollback , ScheduleDeploy"/>-->
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="NAM_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_Nexus5010_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive , ScheduleOverwrite , ScheduleRollback , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="N5K_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_Nexus7K_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive , ScheduleOverwrite , ScheduleRollback, ScheduleDeploy"/>-->
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="N7K_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_WLC_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleRollback  , ScheduleDeploy"/>-->
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="WLC_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_C2960Plus_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="C2960Plus_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_C2960XR_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="C2960XR_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_ASR1001X_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="ASR1001X_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_C6880X_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="C6880X_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <test name="CA_IE2000_Tests">		
+		
+        <parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+        <parameter name="parentContextId" value="applicationContext-main" />
+        <parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+        <groups>
+            <run>
+                <include name="IE2000_DP" />
+            </run>
+        </groups>
+           
+        <classes>
+            <class
+                name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.cisco.test.tea.log.TestResultLoggingListener" />
+    </listeners>
+</suite>

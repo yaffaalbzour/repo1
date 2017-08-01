@@ -1,0 +1,204 @@
+<testdata xmlns="http://www.cisco.com/tea/0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cisco.com/tea/0.1.0 http://tea/schema/dataprovider-v0_1_0.xsd">
+	
+	
+	<test id="addDevice" name="addDevice">
+		<dataset id="asr9k-56" name="asr9k-56 Device" description="Adds device to PI server.">
+		<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+                          <data name="deviceType" value="ASR9K"/>
+                        <data name="showAclCommand" value="show ipv4 access-list | i acl"/>	
+                        
+		</dataset>
+               <dataset id="C3750E" name="C3750E Device" description="Adds device to PI server.">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="ASR1002" name="ASR1002 Device" description="Adds device to PI server.">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Katana5760" name="Katana5760 Device" description="Add device to PI server">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="Adds device to PI server.">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Edison" name="Edison Device" description="Add device to PI server">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+                </dataset>
+                <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Add device to PI server">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Add device to PI server">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Add device to PI server">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                
+                <dataset id="N7K" name="Nexus 7k Device" description="Add device to PI server">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="CAT4K" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="CAT6K" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                  <dataset id="WLC" name="WLC Device" description="Add device to PI server">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="showAclCommand" value="show acl summary"/>	
+		</dataset>
+                <dataset id="ASA" name="ASA Device" description="Add device to PI server">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>	
+		</dataset>
+                <dataset id="ISR3900" name="ISR3900 Device" description="Add device to PI server">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+	</test>
+		<test id="saveSameTagForDifferentArchive" name="saveSameTagForDifferentArchive">
+		<dataset id="asr9k-56" name="asr9k-56 Device" description="saveSameTagForDifferentArchive">
+		<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+                          <data name="deviceType" value="ASR9K"/>
+                        <data name="showAclCommand" value="show ipv4 access-list | i acl"/>	
+		</dataset>
+               <dataset id="C3750E" name="C3750E Device" description="saveSameTagForDifferentArchive">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="ASR1002" name="ASR1002 Device" description="saveSameTagForDifferentArchive">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Katana5760" name="Katana5760 Device" description="saveSameTagForDifferentArchive">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="saveSameTagForDifferentArchive">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="saveSameTagForDifferentArchive">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                </dataset>
+                <!-- ISRG2-c8800 -->
+                 <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="saveSameTagForDifferentArchive">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+		</dataset>
+                <!-- ISRG2-c8600 -->
+                 <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="saveSameTagForDifferentArchive">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+		</dataset>
+                <!-- ISRG2-c2900 -->
+                 <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="saveSameTagForDifferentArchive">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+		</dataset>
+                
+                <dataset id="N7K" name="Nexus 7k Device" description="saveSameTagForDifferentArchive">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+		</dataset>
+                <dataset id="CAT4K" name="CAT4K Device" description="saveSameTagForDifferentArchive">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+		</dataset>
+                <dataset id="CAT6K" name="CAT4K Device" description="saveSameTagForDifferentArchive">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+		</dataset>
+                <dataset id="WLC" name="WLC Device" description="saveSameTagForDifferentArchive">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="showAclCommand" value="show acl summary"/>	
+		</dataset>
+                <dataset id="ASA" name="ASA Device" description="saveSameTagForDifferentArchive">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+		</dataset>
+                <dataset id="ISR3900" name="ISR3900 Device" description="saveSameTagForDifferentArchive">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+	</test>	
+	
+</testdata>

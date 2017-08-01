@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- * Copyright (c) 2009 by Cisco Systems, Inc. All rights reserved. * * 
+	This software contains proprietary information which shall not be reproduced 
+	* or transferred to other documents and shall not be disclosed to others 
+	or * used for manufacturing or any other purpose without prior permission 
+	of Cisco * Systems. * -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+              http://www.springframework.org/schema/tx
+              http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+              http://www.springframework.org/schema/context
+              http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+              
+	<import resource="pi-ca-test-case-context.xml" />
+
+</beans>
+              

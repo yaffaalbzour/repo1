@@ -1,0 +1,720 @@
+<testdata xmlns="http://www.cisco.com/tea/0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cisco.com/tea/0.1.0 http://tea/schema/dataprovider-v0_1_0.xsd">
+	
+	
+	<test id="addDevice" name="addDevice">
+		<dataset id="Tny2475499c" name="asr9k-56 Device" description="Add device to PI server">
+		<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+                          <data name="deviceType" value="ASR9K"/>
+                        <data name="showAclCommand" value="show ipv4 access-list | i acl"/>	
+		</dataset>
+                <dataset id="Tny2475498c" name="WLC Device" description="Add device to PI server">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="showAclCommand" value="show acl summary"/>	
+		</dataset>
+               <dataset id="Tny24755101c" name="C3750E Device" description="Add device to PI server">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny24755100c" name="ASR1002 Device" description="Add device to PI server">
+                <group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2475495c" name="Katana5760 Device" description="Add device to PI server">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="Add device to PI server">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny24755103c" name="Edison Device" description="Add device to PI server">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c8800-->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Add device to PI server">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c8600-->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Add device to PI server">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c2900-->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Add device to PI server">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                
+                <dataset id="Tny2475497c" name="Nexus 7k Device" description="Add device to PI server">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny24755102c" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475494c" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475493c" name="ASA Device" description="Add device to PI server">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>	
+		</dataset>
+                <dataset id="Tny24755104c" name="ISR3900 Device" description="Add device to PI server">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2485203c" name="ISR2951 Device" description="Add device to PI server">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2491927c" name="Cat3560 Device" description="Add device to PI server">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2533519c" name="CSR1000V Device" description="Add device to PI server">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2536508c" name="Cat3750 Device" description="Add device to PI server">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2545396c" name="Nexus3048 Device" description="Add device to PI server">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny2559948c" name="ISR3845 Device" description="Add device to PI server">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2567491c" name="ISR1941 Device" description="Add device to PI server">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2577271c" name="ISR3925 Device" description="Add device to PI server">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2587252c" name="ISR2901 Device" description="Add device to PI server">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2626952c" name="CAT4K Device" description="Add device to PI server">
+		<group name="sim_CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+                        <data name="isSimulated" value="true"/>
+		</dataset>
+                <dataset id="Tny2626956c" name="CAT6K Device" description="Add device to PI server">
+		<group name="sim_CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+                        <data name="isSimulated" value="true"/>
+		</dataset>
+                <dataset id="Tny2626948c" name="ASA Device" description="Add device to PI server">
+		<group name="sim_ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+                        <data name="isSimulated" value="true"/>
+		</dataset>
+                <dataset id="Tny2625594c" name="ISRv Device" description="Add device to PI server">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2632386c" name="ASAv Device" description="Add device to PI server">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664582c" name="SF350-48P Device" description="Add device to PI server">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664597c" name="SG350XG-24F Device" description="Add device to PI server">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664612c" name="SG550XG-24F Device" description="Add device to PI server">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2757637c" name="ME3600 device" description="Add device to PI server">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2760045c" name="C3750X-24P device" description="Add device to PI server">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="Add device to PI server">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="Add device to PI server">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="Add device to PI server">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="Add device to PI server">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="Add device to PI server">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803891c" name="C2960Plus device" description="Add device to PI server">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803906c" name="C2960XR device" description="Add device to PI server">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803921c" name="ASR1001X device" description="Add device to PI server">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2804909c" name="C6880X device" description="Add device to PI server">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2806205c" name="C3750X device" description="Add device to PI server">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+	</test>
+        
+	<test id="compareRunningConfWithDeviceAfterArchive" name="compareRunningConfWithDeviceAfterArchive">
+		<dataset id="Tny2474648c" name="asr9k-56-device" description="compareRunningConfWithDeviceAfterArchive">
+                <group name="XR" />
+                        <data name="deviceName" value="asr9k-56"/>
+                        <data name="deviceIP" value="172.20.110.56"/>
+                        <data name="deviceType" value="ASR9K"/>
+                </dataset>
+                <dataset id="Tny2474676c" name="C3750E Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+		</dataset>
+                 <dataset id="Tny2474662c" name="ASR1002 Device" description="compareRunningConfWithDeviceAfterArchive">
+                <group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+		</dataset>
+                <dataset id="Tny2474746c" name="Katana5760 Device" description="compareRunningConfWithDeviceAfterArchive">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+		</dataset>
+                <dataset id="Tny2469771c" name="Edison Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+		</dataset>
+                 <dataset id="Tny2474718c" name="Edison Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                </dataset>
+                <!--ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+		</dataset>
+                <!--ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+		</dataset>
+                <!--ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+		</dataset>
+                   
+                <dataset id="Tny2474789c" name="Nexus 7k Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+		</dataset>
+                    
+                <dataset id="Tny2474690c" name="CAT4K Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+		</dataset>
+                 <dataset id="Tny2474704c" name="CAT6K Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+		</dataset>
+                 <dataset id="Tny2474803c" name="WLC Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="showAclCommand" value="show acl summary"/>	
+		</dataset>
+                 <dataset id="Tny2474634c" name="ASA Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+		</dataset>
+                <dataset id="Tny2474732c" name="ISR3900 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2485208c" name="ISR2951 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2491932c" name="Cat3560 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2533524c" name="CSR1000V Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+		</dataset>
+                <dataset id="Tny2536513c" name="Cat3750 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+		</dataset>
+                <dataset id="Tny2545401c" name="Nexus3048 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+		</dataset>
+                <dataset id="Tny2559953c" name="ISR3845 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+		</dataset>
+                <dataset id="Tny2567496c" name="ISR1941 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+		</dataset>
+                <dataset id="Tny2577276c" name="ISR3925 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+		</dataset>
+                <dataset id="Tny2587257c" name="ISR2901 Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+		</dataset>
+                <dataset id="Tny2625599c" name="ISRv Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+		</dataset>
+                <dataset id="Tny2632391c" name="ASAv Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+		</dataset>
+                <dataset id="Tny2664587c" name="SF350-48P Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+		</dataset>
+                <dataset id="Tny2664602c" name="SG350XG-24F Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+		</dataset>
+                <dataset id="Tny2664617c" name="SG550XG-24F Device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+		</dataset>
+                <dataset id="Tny2757642c" name="ME3600 device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+		</dataset>
+                <dataset id="Tny2760050c" name="C3750X-24P device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+		</dataset>
+                <dataset id="Tny2803896c" name="C2960Plus device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+		</dataset>
+                <dataset id="Tny280391c" name="C2960XR device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+		</dataset>
+                <dataset id="Tny2803926c" name="ASR1001X device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+		</dataset>
+                <dataset id="Tny2804915c" name="C6880X device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2804911c" name="C3750X device" description="compareRunningConfWithDeviceAfterArchive">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+		</dataset>
+	</test>	
+        
+        <test id="getLatestDiff" name="getLatestDiff">
+            <dataset id="Tny2474646c" name="getLatestDiff" description="getLatestDiff">
+                <group name="XR" />
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474660c" name="getLatestDiff" description="getLatestDiff">
+                <group name="XE" />
+                    <data name="testName" value="getLatestDiff"/>	
+            </dataset>
+            <dataset id="Tny2474730c" name="getLatestDiff" description="getLatestDiff">
+                <group name="ISR_DP" />
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2485206c" name="getLatestDiff" description="getLatestDiff">
+                <group name="ISR2951_DP" />
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2491930c" name="getLatestDiff" description="getLatestDiff">
+                <group name="Cat3560_DP" />
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474716c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="Edison_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474674c" name="getLatestDiff" description="getLatestDiff">
+                <group name="C3750E" />
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+                <dataset id="Tny2474688c" name="getLatestDiff" description="getLatestDiff">
+                <group name="CAT4K_DP" /> 
+                    <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474702c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="CAT6K_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>   
+            <dataset id="Tny2474744c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="Katana_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474787c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="N7K_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474801c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="WLC_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2474632c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="ASA_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2533522c" name="getLatestDiff" description="getLatestDiff">
+                    <group name="CSR1000V_DP" />
+                        <data name="testName" value="getLatestDiff"/>
+            </dataset>
+            <dataset id="Tny2536511c" name="Cat3750 Device" description="getLatestDiff">
+		<group name="Cat3750_DP" />
+			<data name="testName" value="getLatestDiff"/>
+		</dataset>
+                <dataset id="Tny2545399c" name="Nexus3048 Device" description="getLatestDiff">
+		<group name="Nexus3048_DP" />
+			<data name="testName" value="getLatestDiff"/>
+		</dataset>
+                <dataset id="Tny2559951c" name="ISR3845 Device" description="getLatestDiff">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+		</dataset>
+                <dataset id="Tny2567494c" name="ISR1941 Device" description="getLatestDiff">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+		</dataset>
+                <dataset id="Tny2577274c" name="ISR3925 Device" description="getLatestDiff">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+		</dataset>
+                <dataset id="Tny2587255c" name="ISR2901 Device" description="getLatestDiff">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+		</dataset>
+                <dataset id="Tny2625597c" name="ISRv Device" description="getLatestDiff">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+		</dataset>
+                <dataset id="Tny2632389c" name="ASAv Device" description="getLatestDiff">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+		</dataset>
+                <dataset id="Tny2664585c" name="SF350-48P Device" description="getLatestDiff">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+		</dataset>
+                <dataset id="Tny2664600c" name="SG350XG-24F Device" description="getLatestDiff">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+		</dataset>
+                <dataset id="Tny2664615c" name="SG550XG-24F Device" description="getLatestDiff">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+		</dataset>
+                <dataset id="Tny2757640c" name="ME3600 device" description="getLatestDiff">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+		</dataset>
+                <dataset id="Tny2760048c" name="C3750X-24P device" description="getLatestDiff">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="getLatestDiff">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="getLatestDiff">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="getLatestDiff">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="getLatestDiff">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="getLatestDiff">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+		</dataset>
+                <dataset id="Tny2803894c" name="C2960Plus device" description="getLatestDiff">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+		</dataset>
+                <dataset id="Tny2803909c" name="C2960XR device" description="getLatestDiff">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+		</dataset>
+                <dataset id="Tny2803924c" name="ASR1001X device" description="getLatestDiff">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+		</dataset>
+                <dataset id="Tny2804912c" name="C6880X device" description="getLatestDiff">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+		</dataset>
+                <dataset id="Tny2804908c" name="C3750X device" description="getLatestDiff">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+		</dataset>
+	</test>	
+        <test id="compareRunningConfWithDeviceForSimDevices" name="compareRunningConfWithDeviceForSimDevices">
+             <dataset id="Tny2626954c" name="CAT4K Device" description="compareRunningConfWithDeviceForSimDevices">
+		<group name="sim_CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+              </dataset>
+              <dataset id="Tny2626958c" name="CAT6K Device" description="compareRunningConfWithDeviceForSimDevices">
+		<group name="sim_CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+              </dataset>
+              <dataset id="Tny2626950c" name="ASA Device" description="compareRunningConfWithDeviceForSimDevices">
+		<group name="sim_ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+		</dataset>
+        </test>
+        
+        
+        <test id="compareStartupConfWithDeviceForSimDevices" name="compareStartupConfWithDeviceForSimDevices">
+             <dataset id="Tny2626955c" name="CAT4K Device" description="compareStartupConfWithDeviceForSimDevices">
+		<group name="sim_CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+              </dataset>
+              <dataset id="Tny2626959c" name="CAT6K Device" description="compareStartupConfWithDeviceForSimDevices">
+		<group name="sim_CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+              </dataset>
+              <dataset id="Tny2626951c" name="ASA Device" description="compareStartupConfWithDeviceForSimDevices">
+            	<group name="sim_ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+              </dataset>
+        </test>
+        
+        
+</testdata>

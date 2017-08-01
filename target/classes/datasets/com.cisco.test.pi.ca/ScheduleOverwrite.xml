@@ -1,0 +1,769 @@
+<testdata xmlns="http://www.cisco.com/tea/0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cisco.com/tea/0.1.0 http://tea/schema/dataprovider-v0_1_0.xsd">
+
+
+	<test id="addDevice" name="addDevice">
+		<dataset id="Tny2475499c" name="asr9k-56 Device" description="Add device to PI server.">
+		<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+                          <data name="deviceType" value="ASR9K"/>
+                        <data name="showAclCommand" value="show ipv4 access-list | i acl"/>	
+                        
+		</dataset>
+               <dataset id="Tny24755101c" name="C3750E Device" description="Add device to PI server.">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                  <dataset id="Edison" name="Edison Device" description="Add device to PI server.">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny24755103c" name="Edison Device" description="Add device to PI server">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny24755100c" name="ASR1002 Device" description="Add device to PI server">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2475495c" name="Katana5760 Device" description="Add device to PI server">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                  <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Add device to PI server">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                    <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Add device to PI server">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Add device to PI server">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                
+                <dataset id="Tny2475497c" name="Nexus 7k Device" description="Add device to PI server">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                 <dataset id="Tny24755102c" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475494c" name="CAT6K Device" description="Add device to PI server">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475493c" name="ASA Device" description="Add device to PI server">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>	
+		</dataset>
+                <dataset id="Tny24755104c" name="ISR3900 Device" description="Add device to PI server">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2485203c" name="ISR2951 Device" description="Add device to PI server">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2491927c" name="Cat3560 Device" description="Add device to PI server">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2510352c" name="Nexus 5k Device" description="Add device to PI server">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny2533519c" name="CSR1000V Device" description="Add device to PI server">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2536508c" name="Cat3750 Device" description="Add device to PI server">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2545396c" name="Nexus3048 Device" description="Add device to PI server">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny2559948c" name="ISR3845 Device" description="Add device to PI server">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2567491c" name="ISR1941 Device" description="Add device to PI server">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2577271c" name="ISR3925 Device" description="Add device to PI server">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2587252c" name="ISR2901 Device" description="Add device to PI server">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2625594c" name="ISRv Device" description="Add device to PI server">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2632386c" name="ASAv Device" description="Add device to PI server">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664582c" name="SF350-48P Device" description="Add device to PI server">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664597c" name="SG350XG-24F Device" description="Add device to PI server">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664612c" name="SG550XG-24F Device" description="Add device to PI server">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2757637c" name="ME3600 device" description="Add device to PI server">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2760045c" name="C3750X-24P device" description="Add device to PI server">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="Add device to PI server">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="Add device to PI server">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="Add device to PI server">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="Add device to PI server">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="Add device to PI server">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803891c" name="C2960Plus device" description="Add device to PI server">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803906c" name="C2960XR device" description="Add device to PI server">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803921c" name="ASR1001X device" description="Add device to PI server">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2804909c" name="C6880X device" description="Add device to PI server">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2806205c" name="C3750X device" description="Add device to PI server">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+	</test>
+        
+    <test id="scheduleOverwrite" name="scheduleOverwrite">
+                <dataset id="Tny2474677c" name="C3750E Device" description="schedule Overwrite">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                 <dataset id="Edison" name="Edison Device" description="Schedule Overwrite">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>
+                       <data name="isPostArchive" value="false"/>
+		</dataset>
+                 <dataset id="Tny2474719c" name="Edison Device" description="Schedule Overwrite">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                       <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2474663c" name="ASR1002 Device" description="schedule Overwrite">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="isPostArchive" value="false"/>
+                 </dataset>
+                  <dataset id="Tny2474747c" name="Katana5760 Device" description="schedule Overwrite">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                    <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="schedule overwrite">
+                <group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                   <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="schedule overwrite">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="schedule overwrite">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2474790c" name="Nexus 7k Device" description="schedule overwrite">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                 <dataset id="Tny2474691c" name="CAT4K Device" description="schedule overwrite">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2474705c" name="CAT6K Device" description="schedule overwrite">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2474635c" name="ASA Device" description="schedule overwrite">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2474733c" name="ISR3900 Device" description="schedule overwrite">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="isPostArchive" value="false"/>
+                </dataset>
+                <dataset id="Tny2485209c" name="ISR2951 Device" description="schedule overwrite">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="isPostArchive" value="false"/>
+                </dataset>
+                <dataset id="Tny2491933c" name="Cat3560 Device" description="schedule overwrite">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2510358c" name="Nexus 5k Device" description="schedule overwrite">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                        <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2533525c" name="CSR1000V Device" description="schedule overwrite">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                       <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2536514c" name="Cat3750 Device" description="schedule overwrite">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2545402c" name="Nexus3048 Device" description="schedule overwrite">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2559954c" name="ISR3845 Device" description="schedule overwrite">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="isPostArchive" value="false"/>	
+		</dataset>
+                <dataset id="Tny2567497c" name="ISR1941 Device" description="schedule overwrite">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2577277c" name="ISR3925 Device" description="schedule overwrite">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2587258c" name="ISR2901 Device" description="schedule overwrite">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2625600c" name="ISRv Device" description="schedule overwrite">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2632392c" name="ASAv Device" description="schedule overwrite">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2664588c" name="SF350-48P Device" description="schedule overwrite">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2664603c" name="SG350XG-24F Device" description="schedule overwrite">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2664618c" name="SG550XG-24F Device" description="schedule overwrite">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2757643c" name="ME3600 device" description="schedule overwrite">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2760051c" name="C3750X-24P device" description="schedule overwrite">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="schedule overwrite">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="schedule overwrite">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="schedule overwrite">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="schedule overwrite">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="schedule overwrite">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2803897c" name="C2960Plus device" description="schedule overwrite">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2803912c" name="C2960XR device" description="schedule overwrite">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2803927c" name="ASR1001X device" description="schedule overwrite">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2804916c" name="C6880X device" description="schedule overwrite">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+                <dataset id="Tny2804912c" name="C3750X device" description="schedule overwrite">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="isPostArchive" value="false"/>
+		</dataset>
+	</test>	
+        
+        <test id="scheduleOverwriteWithArchiveAfter" name="scheduleOverwriteWithArchiveAfter">
+                <dataset id="Tny2474678c" name="C3750E Device" description="schedule Overwrite with archive after overwrite">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="schedule Overwrite with archive after overwrite">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>
+                       <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474720c" name="Edison Device" description="schedule Overwrite with archive after overwrite">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                       <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474664c" name="ASR1002 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="isPostArchive" value="true"/>
+                 </dataset>
+                  <dataset id="Tny2474748c" name="Katana5760 Device" description="schedule Overwrite with archive after overwrite">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                   <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="schedule Overwrite with archive after overwrite">
+                <group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                   <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474791c" name="Nexus 7k Device" description="schedule Overwrite with archive after overwrite">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474692c" name="CAT4K Device" description="schedule Overwrite with archive after overwrite">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474706c" name="CAT6K Device" description="schedule Overwrite with archive after overwrite">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                 <dataset id="Tny2474636c" name="ASA Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="isPostArchive" value="true"/>
+		</dataset>
+                <dataset id="Tny2474734c" name="ISR3900 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="isPostArchive" value="true"/>
+                </dataset>
+                <dataset id="Tny2485210c" name="ISR2951 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="isPostArchive" value="true"/>
+                </dataset>
+                <dataset id="Tny2491934c" name="Cat3560 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2510359c" name="Nexus 5k Device" description="schedule Overwrite with archive after overwrite">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2533526c" name="CSR1000V Device" description="schedule Overwrite with archive after overwrite">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                         <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2536515c" name="Cat3750 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2545403c" name="Nexus3048 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2559955c" name="ISR3845 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2567498c" name="ISR1941 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2577278c" name="ISR3925 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2587259c" name="ISR2901 Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2625601c" name="ISRv Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2632393c" name="ASAv Device" description="schedule Overwrite with archive after overwrite">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2664589c" name="SF350-48P Device" description="schedule Overwrite with archive after overwrite">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2664604c" name="SG350XG-24F Device" description="schedule Overwrite with archive after overwrite">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2664619c" name="SG550XG-24F Device" description="schedule Overwrite with archive after overwrite">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2757644c" name="ME3600 device" description="schedule Overwrite with archive after overwrite">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2760052c" name="C3750X-24P device" description="schedule Overwrite with archive after overwrite">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="schedule Overwrite with archive after overwrite">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="schedule Overwrite with archive after overwrite">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="schedule Overwrite with archive after overwrite">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="schedule Overwrite with archive after overwrite">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="schedule Overwrite with archive after overwrite">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2803898c" name="C2960Plus device" description="schedule Overwrite with archive after overwrite">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2803913c" name="C2960XR device" description="schedule Overwrite with archive after overwrite">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2803928c" name="ASR1001X device" description="schedule Overwrite with archive after overwrite">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2804917c" name="C6880X device" description="schedule Overwrite with archive after overwrite">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+                <dataset id="Tny2804913c" name="C3750X device" description="schedule Overwrite with archive after overwrite">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="isPostArchive" value="true"/>	
+		</dataset>
+	</test>	
+</testdata>

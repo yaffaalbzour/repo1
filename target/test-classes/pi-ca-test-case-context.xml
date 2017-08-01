@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:osgi="http://www.springframework.org/schema/osgi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+              http://www.springframework.org/schema/osgi/spring-osgi.xsd
+              http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+              http://www.springframework.org/schema/tx
+              http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+              http://www.springframework.org/schema/context
+              http://www.springframework.org/schema/context/spring-context-2.5.xsd
+              http://www.springframework.org/schema/util 
+           	  http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<context:annotation-config />
+	<import resource="classpath:DPHelperContext.xml" />
+        <import resource="classpath:HelperContext.xml" />
+
+	<context:component-scan
+		base-package="com.cisco.ifm.inventoryservice.InventoryService" />
+			<import resource="classpath*:/pi-inventory-test-case-context.xml" /> 
+
+	<context:component-scan
+		base-package="com.cisco.ifm.swim.rest.service.ISwimRestService" />
+
+	<import resource="classpath*:/pi-inventory-test-case-context.xml" />
+
+	<bean id="imageParserAdapterFactory" class="com.cisco.ifm.swim.service.impl.util.ImageParserAdapterFactory"/>
+
+	
+	<bean id="ScheduleArchive" class="com.cisco.test.pi.ca.ScheduleArchive" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+	
+	<bean id="ScheduleRollback" class="com.cisco.test.pi.ca.ScheduleRollback" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+	
+	<bean id="ScheduleDeploy" class="com.cisco.test.pi.ca.ScheduleDeploy" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+	
+	<bean id="CompareArchive" class="com.cisco.test.pi.ca.CompareArchive" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+	
+	<bean id="EditTags" class="com.cisco.test.pi.ca.EditTags" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+        
+        <bean id="ScheduleOverwrite" class="com.cisco.test.pi.ca.ScheduleOverwrite" >
+		<property name="testEnvironmentType" value="PRIME_ENVIRONMENT" />
+		<property name="testEnvironment" ref="primeTestEnvironmentFramework" />
+	</bean>	
+	
+	<bean id="ConfigArchiveHelper" class="com.cisco.test.pi.ca.ConfigArchiveHelper" >
+	</bean>	
+		
+	
+
+	
+	
+	<bean id="SwimRestService" class="com.cisco.ifm.swim.rest.service.SwimRestService" />
+	
+	<bean id="SwimRecommendService"
+		class="com.cisco.ifm.swim.rest.service.recommend.SwimRecommendService" />
+	<bean id="jobSchedulerServiceBean"
+		class="com.cisco.ifm.jobscheduler.service.JobSchedulerServiceImpl">
+		<property name="jobService" ref="jobManager"></property>
+		<property name="persistenceService" ref="persistenceService"></property>
+	</bean>
+	<bean id="jobSchedulerRestBean" class="com.cisco.ifm.jobscheduler.rest.JobSchedulerRestService">
+		<property name="jobSchedulerService" ref="jobSchedulerServiceBean"></property>
+	</bean>
+	<bean id="swimCollectionRestServiceBean"
+		class="com.cisco.ifm.swim.rest.service.collection.SwimImageCollectionRestServiceImpl">
+		<property name="repositoryService" ref="swimRepositoryService"></property>
+		<property name="jobSchedulerRestService" ref="jobSchedulerRestBean"></property>
+	</bean>
+
+	<bean id="swimRepositoryRestService"
+		class="com.cisco.ifm.swim.rest.service.repository.SwimRepositoryRestService">
+		<property name="repositoryService" ref="swimRepositoryService"></property>
+	</bean>
+
+</beans>

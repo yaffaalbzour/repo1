@@ -1,0 +1,1309 @@
+<testdata xmlns="http://www.cisco.com/tea/0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cisco.com/tea/0.1.0 http://tea/schema/dataprovider-v0_1_0.xsd">
+
+
+	<test id="addDevice" name="addDevice">
+		<dataset id="Tny2475499c" name="asr9k-56 Device" description="Add device to PI server.">
+		<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+                          <data name="deviceType" value="ASR9K"/>
+                        <data name="showAclCommand" value="show ipv4 access-list | i acl"/>	
+                        
+		</dataset>
+               <dataset id="Tny24755101c" name="C3750E Device" description="Add device to PI server.">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny24755100c" name="ASR1002 Device" description="Add device to PI server.">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475495c" name="Katana5760 Device" description="Add device to PI server">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Edison" name="Edison Device" description="Add device to PI server.">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny24755103c" name="Edison Device" description="Add device to PI server">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Add device to PI server">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Add device to PI server">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Add device to PI server">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475497c" name="Nexus 7k Device" description="Add device to PI server">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                 <dataset id="Tny24755102c" name="CAT4K Device" description="Add device to PI server">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475494c" name="CAT6K Device" description="Add device to PI server">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2475498c" name="WLC Device" description="Add device to PI server">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="showAclCommand" value="show acl summary"/>	
+		</dataset>
+                <dataset id="Tny2475496c" name="NAM Device" description="Add device to PI server">
+		<group name="NAM_DP" />
+			<data name="deviceName" value="NAM"/>
+                        <data name="deviceType" value="NAM"/>
+                        <data name="showAclCommand" value="show application group"/>	
+		</dataset>
+                <dataset id="Tny2475493c" name="ASA Device" description="Add device to PI server">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>	
+		</dataset>
+                <dataset id="Tny24755104c" name="ISR3900 Device" description="Add device to PI server">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2485203c" name="ISR2951 Device" description="Add device to PI server">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2491927c" name="Cat3560 Device" description="Add device to PI server">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2510352c" name="Nexus 5k Device" description="Add device to PI server">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny2533519c" name="CSR1000V Device" description="Add device to PI server">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2536508c" name="Cat3750 Device" description="Add device to PI server">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                <dataset id="Tny2545396c" name="Nexus3048 Device" description="Add device to PI server">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="showAclCommand" value="show run | i 'ip access-list acl'"/>	
+		</dataset>
+                <dataset id="Tny2559948c" name="ISR3845 Device" description="Add device to PI server">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2567491c" name="ISR1941 Device" description="Add device to PI server">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2577271c" name="ISR3925 Device" description="Add device to PI server">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2587252c" name="ISR2901 Device" description="Add device to PI server">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2625594c" name="ISRv Device" description="Add device to PI server">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>
+		</dataset>
+                <dataset id="Tny2632386c" name="ASAv Device" description="Add device to PI server">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664582c" name="SF350-48P Device" description="Add device to PI server">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664597c" name="SG350XG-24F Device" description="Add device to PI server">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2664612c" name="SG550XG-24F Device" description="Add device to PI server">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2757637c" name="ME3600 device" description="Add device to PI server">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2760045c" name="C3750X-24P device" description="Add device to PI server">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="Add device to PI server">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="Add device to PI server">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="Add device to PI server">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="Add device to PI server">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="Add device to PI server">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803891c" name="C2960Plus device" description="Add device to PI server">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803906c" name="C2960XR device" description="Add device to PI server">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2803921c" name="ASR1001X device" description="Add device to PI server">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2804909c" name="C6880X device" description="Add device to PI server">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+                <dataset id="Tny2806205c" name="C3750X device" description="Add device to PI server">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="showAclCommand" value="show run | i access-list acl_"/>
+		</dataset>
+	</test>
+        
+	<test id="scheduleDeploy" name="scheduleDeploy">
+		<dataset id="Tny2474653c" name="asr9k-56 Device" description="Deploy configuration to asr9k-56 Device">
+			<group name="XR" />
+			<data name="deviceName" value="asr9k-56"/>
+			<data name="deviceIP" value="172.20.110.56"/>
+			<data name="deviceName" value="asr9k-56"/>
+                        <data name="deviceType" value="ASR9K"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASR9k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ios.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 
+                <dataset id="Tny2474681c" name="C3750E Device" description="Schedule Deploy for catalyst device">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750/"/>
+			<data name="configFile" value="RUNNINGCONFIG_3750X.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                
+                <dataset id="Tny2474667c" name="ASR1002 Device" description="Schedule Deploy for ASR1002 device">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                         <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASR1k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASR1002.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2474751c" name="Katana5760 Device" description="Schedule Deploy">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Katana5760/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Katana5760.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+                </dataset>
+                <dataset id="Edison" name="Edison Device" description="Schedule Deploy for Edison device">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Edison/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Edison.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset> 
+                <dataset id="Tny2474723c" name="Edison Device" description="Schedule Deploy for Edison device">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Edison/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Edison.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset> 
+                <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Schedule Deploy for ISRG2 device">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG-c88002.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Schedule Deploy for ISRG2 device">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG2-c8600.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Schedule Deploy for ISRG2 device">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG2-c2900.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474794c" name="Nexus 7k Device" description="Schedule Deploy for Nexus7k device">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus7k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_DC1-N7K-6.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474695c" name="CAT4K Device" description="Schedule Deploy for CAT4K device">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CAT4K/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CAT4500.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474709c" name="CAT6K Device" description="Schedule Deploy for CAT6K device">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CAT6K/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CAT6000.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474808c" name="WLC Device" description="Schedule Deploy for WLC device">
+		<group name="WLC_DP" />
+			<data name="deviceName" value="WLC"/>
+                        <data name="deviceType" value="WLC"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/WLC/"/>
+			<data name="configFile" value="RUNNINGCONFIG_WLC.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474765c" name="NAM Device" description="Schedule Deploy for NAM device">
+		<group name="NAM_DP" />
+			<data name="deviceName" value="NAM"/>
+                        <data name="deviceType" value="NAM"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/NAM/"/>
+			<data name="configFile" value="RUNNINGCONFIG_NAM.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474639c" name="ASA Device" description="Schedule Deploy for ASA device">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASA/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASA.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2474737c" name="ISR3900 Device" description="Schedule Deploy">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3900/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3900.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2485213c" name="ISR2951 Device" description="Schedule Deploy">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR2951/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR2951.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2491937c" name="Cat3560 Device" description="Schedule Deploy">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Cat3560/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Cat3560.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2510362c" name="Nexus 5k Device" description="Schedule Deploy">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus5k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Nexus5k.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2491929c" name="CSR1000V Device" description="Schedule Deploy">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CSR1000V/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CSR1000V.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2536518c" name="Cat3750 Device" description="Schedule Deploy">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Cat3750/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Cat3750.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2545406c" name="Nexus3048 Device" description="Schedule Deploy">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus3048/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Nexus3048.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2559958c" name="ISR3845 Device" description="Schedule Deploy">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3845/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3845.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2567501c" name="ISR1941 Device" description="Schedule Deploy">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR1941/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR1941.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2577281c" name="ISR3925 Device" description="Schedule Deploy">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3925/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3925.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2587262c" name="ISR2901 Device" description="Schedule Deploy">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR2901/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR2901.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2625604c" name="ISRv Device" description="Schedule Deploy">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRv/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRv.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2632396c" name="ASAv Device" description="Schedule Deploy">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASAv/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASAv.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664592c" name="SF350-48P Device" description="Schedule Deploy">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SF350-48P/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SF350-48P.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664607c" name="SG350XG-24F Device" description="Schedule Deploy">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SG350XG-24F/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SG350XG-24F.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664622c" name="SG550XG-24F Device" description="Schedule Deploy">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SG550XG-24F/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SG550XG-24F.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2757647c" name="ME3600 device" description="Schedule Deploy">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ME3600/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ME3600.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2760055c" name="C3750X-24P device" description="Schedule Deploy">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750X-24P/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C3750X-24P.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="Schedule Deploy">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE4000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE4000.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="Schedule Deploy">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/newSupport/"/>
+			<data name="configFile" value="RUNNINGCONFIG_newSupport.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="Schedule Deploy">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE3000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE3000.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="Schedule Deploy">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE2000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE2000.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="Schedule Deploy">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C7613/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C7613.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803901c" name="C2960Plus device" description="Schedule Deploy">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C2960Plus/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C2960Plus.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803916c" name="C2960XR device" description="Schedule Deploy">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C2960XR/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C2960XR.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803931c" name="ASR1001X device" description="Schedule Deploy">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASR1001X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASR1001X.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2804920c" name="C6880X device" description="Schedule Deploy">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C6880X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C6880X.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2804916c" name="C3750X device" description="Schedule Deploy">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C3750X.cfg"/>
+			<data name="deployToRunning" value="true"/>
+			<data name="deployToStartup" value="false"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+	</test>	
+
+    <test id="scheduleDeployWithOverwriteStartupConfig" name="scheduleDeployWithOverwriteStartupConfig">
+                <dataset id="Tny2474682c" name="C3750E Device" description="schedule Deploy With Over write Startup Config">
+		<group name="C3750E" />
+			<data name="deviceName" value="C3750E"/>
+                        <data name="deviceType" value="C3750E"/>
+			<data name="deviceIP" value="172.20.118.151"/>	
+                         <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750/"/>
+			<data name="configFile" value="RUNNINGCONFIG_3750X.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                
+                <dataset id="Tny2474668c" name="ASR1002 Device" description="schedule Deploy With Over write Startup Config">
+		<group name="XE" />
+			<data name="deviceName" value="ASR1002"/>
+                        <data name="deviceType" value="ASR1002"/>
+			<data name="deviceIP" value="172.20.118.240"/>	
+                         <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASR1k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASR1002.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                         <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2474752c" name="Katana5760 Device" description="Schedule Deploy with overwrite startup config">
+                <group name="Katana_DP" />
+			<data name="deviceName" value="Katana5760"/>
+                        <data name="deviceType" value="Katana"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Katana5760/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Katana5760.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+                </dataset>
+                <dataset id="Edison" name="Edison Device" description="Schedule Deploy with overwrite startup config for Edison device">
+		<group name="Edison" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+			<data name="deviceIP" value="10.197.72.42"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Edison/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Edison.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+                        <data name="showAclCommand" value="show ip access-list | i Standard IP access list"/>	
+		</dataset>
+                 <dataset id="Tny2474724c" name="Edison Device" description="Schedule Deploy with overwrite startup config for Edison device">
+		<group name="Edison_DP" />
+			<data name="deviceName" value="Edison"/>
+                        <data name="deviceType" value="Edison"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Edison/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Edison.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                
+                  <!-- ISRG2-c8800 -->
+                <dataset id="ISRG2-c8800" name="ISRG2-c8800 Device" description="Schedule Deploy with overwrite startup config for ISRG2 device">
+		<group name="ISRG2-c8800" />
+			<data name="deviceName" value="ISRG2-c8800"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.106.190.89"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG2.cfg"/>
+                	<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <!-- ISRG2-c8600 -->
+                <dataset id="ISRG2-c8600" name="ISRG2-c8600 Device" description="Schedule Deploy with overwrite startup config for ISRG2 device">
+		<group name="ISRG2-c8600" />
+			<data name="deviceName" value="ISRG2-c8600"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="172.20.118.176"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG2-c8600.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <!-- ISRG2-c2900 -->
+                <dataset id="ISRG2-c2900" name="ISRG2-c2900 Device" description="Schedule Deploy with overwrite startup config for ISRG2 device">
+		<group name="ISRG2-c2900" />
+			<data name="deviceName" value="ISRG2-c2900"/>
+                        <data name="deviceType" value="ISRG2"/>
+			<data name="deviceIP" value="10.197.72.55"/>	
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRG2/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRG2-c2900.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                <dataset id="Tny2474795c" name="Nexus 7k Device" description="Schedule Deploy with overwrite startup config for Nexus7k device">
+		<group name="N7K_DP" />
+			<data name="deviceName" value="Nexus7K"/>
+                        <data name="deviceType" value="Nexus7K"/>
+                          <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus7k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_DC1-N7K-6.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <dataset id="Tny2474696c" name="CAT4K Device" description="Schedule Deploy with overwrite startup config for CAT4K device">
+		<group name="CAT4K_DP" />
+			<data name="deviceName" value="CAT4K"/>
+                        <data name="deviceType" value="Cat4000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CAT4K/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CAT4500.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <dataset id="Tny2474710c" name="CAT6K Device" description="Schedule Deploy with overwrite startup config for CAT6K device">
+		<group name="CAT6K_DP" />
+			<data name="deviceName" value="CAT6K"/>
+                        <data name="deviceType" value="Cat6000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CAT6K/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CAT6000.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>	
+		</dataset>
+                 <dataset id="Tny2474640c" name="ASA Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ASA_DP" />
+			<data name="deviceName" value="ASA"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASA/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASA.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2474738c" name="ISR3900 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR_DP" />
+			<data name="deviceName" value="ISR3900"/>
+                        <data name="deviceType" value="ISR"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3900/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3900.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                 <dataset id="Tny2485214c" name="ISR2951 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR2951_DP" />
+			<data name="deviceName" value="ISR2951"/>
+                        <data name="deviceType" value="ISR2951"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR2951/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR2951.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                 <dataset id="Tny2491938c" name="Cat3560 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="Cat3560_DP" />
+			<data name="deviceName" value="Cat3560"/>
+                        <data name="deviceType" value="Cat3560"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Cat3560/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Cat3560.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2510363c" name="Nexus 5k Device" description="Schedule Deploy with overwrite startup config">
+		<group name="N5K_DP" />
+			<data name="deviceName" value="Nexus5K"/>
+                        <data name="deviceType" value="Nexus5K"/>
+                         <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus5k/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Nexus5k.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2491930c" name="CSR1000V Device" description="Schedule Deploy with overwrite startup config">
+		<group name="CSR1000V_DP" />
+			<data name="deviceName" value="CSR1000V"/>
+                        <data name="deviceType" value="CSR1000V"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/CSR1000V/"/>
+			<data name="configFile" value="RUNNINGCONFIG_CSR1000V.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2536519c" name="Cat3750 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="Cat3750_DP" />
+			<data name="deviceName" value="Cat3750"/>
+                        <data name="deviceType" value="Cat3750"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Cat3750/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Cat3750.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2545407c" name="Nexus3048 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="Nexus3048_DP" />
+			<data name="deviceName" value="Nexus3048"/>
+                        <data name="deviceType" value="Nexus3048"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/Nexus3048/"/>
+			<data name="configFile" value="RUNNINGCONFIG_Nexus3048.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2559959c" name="ISR3845 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR3845_DP" /> 
+			<data name="deviceName" value="ISR3845"/>
+                        <data name="deviceType" value="ISR3845"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3845/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3845.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2567502c" name="ISR1941 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR1941_DP" /> 
+			<data name="deviceName" value="ISR1941"/>
+                        <data name="deviceType" value="ISR1941"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR1941/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR1941.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2577282c" name="ISR3925 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR3925_DP" /> 
+			<data name="deviceName" value="ISR3925"/>
+                        <data name="deviceType" value="ISR3925"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR3925/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR3925.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2587263c" name="ISR2901 Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISR2901_DP" /> 
+			<data name="deviceName" value="ISR2901"/>
+                        <data name="deviceType" value="ISR2901"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISR2901/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISR2901.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2625605c" name="ISRv Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ISRv_DP" /> 
+			<data name="deviceName" value="ISRv"/>
+                        <data name="deviceType" value="ISRv"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ISRv/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ISRv.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2632397c" name="ASAv Device" description="Schedule Deploy with overwrite startup config">
+		<group name="ASAv_DP" /> 
+			<data name="deviceName" value="ASAv"/>
+                        <data name="deviceType" value="ASA"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASAv/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASAv.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664593c" name="SF350-48P Device" description="Schedule Deploy with overwrite startup config">
+		<group name="SF350-48P_DP" /> 
+			<data name="deviceName" value="SF350-48P"/>
+                        <data name="deviceType" value="SF350-48P"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SF350-48P/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SF350-48P.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664608c" name="SG350XG-24F Device" description="Schedule Deploy with overwrite startup config">
+		<group name="SG350XG-24F_DP" /> 
+			<data name="deviceName" value="SG350XG-24F"/>
+                        <data name="deviceType" value="SG350XG-24F"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SG350XG-24F/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SG350XG-24F.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2664623c" name="SG550XG-24F Device" description="Schedule Deploy with overwrite startup config">
+		<group name="SG550XG-24F_DP" /> 
+			<data name="deviceName" value="SG550XG-24F"/>
+                        <data name="deviceType" value="SG550XG-24F"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/SG550XG-24F/"/>
+			<data name="configFile" value="RUNNINGCONFIG_SG550XG-24F.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2757648c" name="ME3600 device" description="Schedule Deploy with overwrite startup config">
+		<group name="ME3600_DP" /> 
+			<data name="deviceName" value="ME3600"/>
+                        <data name="deviceType" value="ME3600"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ME3600/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ME3600.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2760056c" name="C3750X-24P device" description="Schedule Deploy with overwrite startup config">
+		<group name="C3750X-24P_DP" /> 
+			<data name="deviceName" value="C3750X-24P"/>
+                        <data name="deviceType" value="C3750X-24P"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750X-24P/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C3750X-24P.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE4000" name="IE4000 device" description="Schedule Deploy with overwrite startup config">
+		<group name="IE4000_DP" /> 
+			<data name="deviceName" value="IE4000"/>
+                        <data name="deviceType" value="IE4000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE4000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE4000.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="newSupport" name="newSupport device" description="Schedule Deploy with overwrite startup config">
+		<group name="newSupport_DP" /> 
+			<data name="deviceName" value="newSupport"/>
+                        <data name="deviceType" value="newSupport"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/newSupport/"/>
+			<data name="configFile" value="RUNNINGCONFIG_newSupport.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE3000" name="IE3000 device" description="Schedule Deploy with overwrite startup config">
+		<group name="IE3000_DP" /> 
+			<data name="deviceName" value="IE3000"/>
+                        <data name="deviceType" value="IE3000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE3000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE3000.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="IE2000" name="IE2000 device" description="Schedule Deploy with overwrite startup config">
+		<group name="IE2000_DP" /> 
+			<data name="deviceName" value="IE2000"/>
+                        <data name="deviceType" value="IE2000"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/IE2000/"/>
+			<data name="configFile" value="RUNNINGCONFIG_IE2000.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="C7613" name="C7613 device" description="Schedule Deploy with overwrite startup config">
+		<group name="C7613_DP" /> 
+			<data name="deviceName" value="C7613"/>
+                        <data name="deviceType" value="C7613"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C7613/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C7613.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803902c" name="C2960Plus device" description="Schedule Deploy with overwrite startup config">
+		<group name="C2960Plus_DP" /> 
+			<data name="deviceName" value="C2960Plus"/>
+                        <data name="deviceType" value="C2960Plus"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C2960Plus/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C2960Plus.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803917c" name="C2960XR device" description="Schedule Deploy with overwrite startup config">
+		<group name="C2960XR_DP" /> 
+			<data name="deviceName" value="C2960XR"/>
+                        <data name="deviceType" value="C2960XR"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C2960XR/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C2960XR.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2803932c" name="ASR1001X device" description="Schedule Deploy with overwrite startup config">
+		<group name="ASR1001X_DP" /> 
+			<data name="deviceName" value="ASR1001X"/>
+                        <data name="deviceType" value="ASR1001X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/ASR1001X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_ASR1001X.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2804921c" name="C6880X device" description="Schedule Deploy with overwrite startup config">
+		<group name="C6880X_DP" /> 
+			<data name="deviceName" value="C6880X"/>
+                        <data name="deviceType" value="C6880X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C6880X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C6880X.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+                <dataset id="Tny2804917c" name="C3750X device" description="Schedule Deploy with overwrite startup config">
+		<group name="C3750X_DP" /> 
+			<data name="deviceName" value="C3750X"/>
+                        <data name="deviceType" value="C3750X"/>
+                        <data name="filePath" value="ftp://cisco:cisco@172.20.68.60/configArchives/C3750X/"/>
+			<data name="configFile" value="RUNNINGCONFIG_C3750X.cfg"/>
+			<data name="deployToRunning" value="false"/>
+			<data name="deployToStartup" value="true"/>
+			<data name="deviceId" value="Configuration Deploy"/>
+			<data name="rebootRequired" value="false"/>
+			<data name="writeMemRequired" value="false"/>
+		</dataset>
+	</test>	
+</testdata>

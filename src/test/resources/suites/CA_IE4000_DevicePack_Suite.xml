@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NMTG__ConfigArchive__DevicePack__API__IE4000__TestSuite" verbose="10" preserve-order="true">
+	<test name="CA_IE4000_Tests">		
+		
+		<parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , ScheduleDeploy"/>
+<!--<parameter name="testBeanIds" value="ScheduleArchive, ScheduleOverwrite , ScheduleRollback , CompareArchive , EditTags , ScheduleDeploy"/>-->
+		<parameter name="parentContextId" value="applicationContext-main" />
+		<parameter name="contextPaths" value="pi-ca-test-context.xml" />
+                
+                <groups>
+                     <run>
+                     	<include name="IE4000_DP" />
+                     </run>
+                 </groups>
+           
+		<classes>
+			<class
+				name="com.cisco.test.tea.core.spring.SpringContextTestFactory" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.cisco.test.tea.log.TestResultLoggingListener" />
+	</listeners>
+</suite>

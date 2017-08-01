@@ -1,0 +1,222 @@
+<testbed
+    xmlns="http://www.cisco.com/tea/0.1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.cisco.com/tea/0.1.0 http://tea/schema/testbed-v0_1_0.xsd http://tea/schema/testbed-devices-v0_1_0.xsd">
+    <driver 
+        http-proxy-host="proxy.esl.cisco.com" 
+        http-proxy-port="80" 
+        https-proxy-host="proxy.esl.cisco.com" 
+        https-proxy-port="80" 
+        non-proxy-hosts="*.cisco.com|10*|172*|localhost|171.69.217.*|192.168.115.*" />
+
+    <tomcat-application-server 
+        name="172.20.68.48" 
+        host="172.20.68.48"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+		
+                
+    <tomcat-application-server 
+        name="192.168.115.155" 
+        host="192.168.115.155"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+                
+    <tomcat-application-server 
+        name="172.20.68.51" 
+        host="172.20.68.51"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+    <tomcat-application-server 
+        name="172.20.68.50" 
+        host="172.20.68.50"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+    <tomcat-application-server 
+        name="10.126.218.203" 
+        host="10.126.218.203"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />			
+    <tomcat-application-server 
+        name="172.20.68.23" 
+        host="172.20.68.23"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="p1q2b3"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+ 
+ 	
+    <tomcat-application-server 
+        name="10.104.119.178" 
+        host="10.104.119.178"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="Public123"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />	
+ 
+    <tomcat-application-server 
+        name="10.104.119.179" 
+        host="10.104.119.179"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="Public123"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />
+  
+    <tomcat-application-server 
+        name="10.104.119.182" 
+        host="10.104.119.182"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="Public123"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />
+   
+    <tomcat-application-server 
+        name="10.104.119.180" 
+        host="10.104.119.180"
+        installation-location="/opt/CSCOlumos/server" 
+        application-password="Public123"
+        application-username="root"
+        connection-password="Public123"
+        connection-prompt="#" 
+        connection-protocol="SSH" 
+        connection-username="root" 		
+        http-port="80"
+        https-port="443" 
+        ssl-enabled="false" 
+        os="Linux" />
+        
+    <network-device 
+        host="5.1.1.8"
+        os="CatOS"
+        name="CAT4K"
+        connection-username="dsprime"
+        connection-password="dsprime"
+        enable-password="dsprime"
+        timeout="120000" 
+        device-protocol="telnet"
+        login-type="Username,Password"
+        connection-prompt="#"
+        enable-prompt=">"
+        snmp-version="2c"
+        snmp-timeout="50000"
+        snmp-retries="5"
+        snmp-read-community="pitest"
+        snmp-write-community="pitest"        
+        http-server="http"
+        http-port="80"/>
+        
+    <network-device 
+        host="5.1.1.7"
+        os="CatOS"
+        name="CAT6K"
+        connection-protocol="telnet"
+        connection-username="dsprime"
+        connection-password="dsprime"
+        enable-password="dsprime"
+        timeout="120000" 
+        device-protocol="telnet"
+        login-type="Username,Password"
+        connection-prompt="#"
+        enable-prompt=">"
+        snmp-version="2c"
+        snmp-timeout="50000"
+        snmp-retries="5"
+        snmp-read-community="picomm"
+        snmp-write-community="picomm"        
+        http-server="http"
+        http-port="80"
+        device-timeout ="300000"/>
+    
+    <network-device host="5.1.1.9"
+                    os="ASA"
+                    name="ASA"
+                    connection-username="pi9pwd7"
+                    connection-password="pi9pwd7"
+                    enable-password="pi9pwd7"
+                    timeout="120000" 
+                    device-protocol="telnet"
+                    login-type="Username,Password"
+                    connection-prompt="#"
+                    enable-prompt=">"
+                    snmp-version="2c"
+                    snmp-timeout="50000"
+                    snmp-retries="5"
+                    snmp-read-community="private"
+                    snmp-write-community="private"        
+                    http-server="http"
+                    http-port="80"/>      
+
+</testbed>
